@@ -48,7 +48,7 @@
         </center><br><br>
         <form name="gymsheet" method="POST">
             <label for="fname">Name</label><br>
-            <input type="name" id="name" class="form-control" name="NAME" placeholder="name" pattern="{1,32}"
+            <input type="name" id="name" class="form-control" name="NAME" placeholder="name"
                 maxlength="32" required /><br>
 
 
@@ -130,6 +130,16 @@
 
         window.onunload = function () { null };
     </script>
+    <SCRIPT language=JavaScript>
+var message = "function disabled";
+
+function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+
+if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+
+document.onmousedown = rtclickcheck;
+
+</SCRIPT>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
