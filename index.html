@@ -45,8 +45,8 @@
         <center>
             <h3><b>Please Fill The Details</b>
             </h3>
-        </center><br>
-        <form name="gymsheet" method="POST">
+        </center>
+        <form name="gymsheet" method="POST" class="mt-5">
             <label for="fname">Name</label><br>
             <input type="name" id="name" class="form-control" name="NAME" placeholder="name" pattern="[A-Za-z]{1,32}"
                 maxlength="32" required /><br>
@@ -64,7 +64,7 @@
 
             <label>Female
 
-                <input type="radio" id="dob" name="GENDER" class="px-4" value="Female"></label><br>
+                <input type="radio" id="dob" name="GENDER" class="px-4" value="Female"></label><br><br>
 
             <label for="lname">Mobile No.</label><br>
             <input type="tel" pattern="[7-9]{1}[0-9]{9}" id="mobileno" maxlength="10"
@@ -74,7 +74,7 @@
             <label for="lname">DOB</label><br>
             <input type="date" id="dob" class="form-control " name="DOB" placeholder="DOB" required /><br>
             <center>
-                <button type="submit" name="submit" class="btn btn-primary" onClick="showMessage()">Submit</button>
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
             </center>
             <div class="alert alert-success mt-2" role="alert" id="success" style="display:none;">
                 Successfully Send
