@@ -41,14 +41,15 @@
 
 
 
-    <div class="col-md-4 mt-3">
+    <div class="col-md-4 mt-3 my-2">
         <center>
             <h3><b>Please Fill The Details</b>
             </h3>
         </center><br><br>
         <form name="gymsheet" method="POST">
             <label for="fname">Name</label><br>
-            <input type="name" id="name" class="form-control" name="NAME" placeholder="name"><br>
+            <input type="name" id="name" class="form-control" name="NAME" placeholder="name" maxlength="32"
+                required /><br>
 
 
             <label for="lname">Email id</label><br>
@@ -63,8 +64,8 @@
 
             <label>Female
 
-                <input type="radio" id="dob" name="GENDER" class="px-4" value="Female"></label><br><br>
-
+                <input type="radio" id="dob" name="GENDER" class="px-4" value="Female"></label><br>
+            <br>
             <label for="lname">Mobile No.</label><br>
             <input type="tel" pattern="[7-9]{1}[0-9]{9}" id="mobileno" maxlength="10"
                 class="form-control js-input-mobile" name="MOBILENO" placeholder="Mobileno." title="Ten digits code"
@@ -91,7 +92,7 @@
 
 
         form.addEventListener("submit", e => {
-            document.getElementById("success");
+            // document.getElementById("success");
             // alert("sucsss");
 
             e.preventDefault();
@@ -129,7 +130,6 @@
 
         window.onunload = function () { null };
     </script>
-   
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
